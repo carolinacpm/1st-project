@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/729ec44fbe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Carolina Machado</title>
+</head>
+<body>
+    <div class="background-image">
+        <header>
+            <img src="Images/Logo.png" alt="Logo Carolina Machado">
+            <ul>
+                <li>
+                    <a href="https://github.com/carolinacpm" target="_blank">github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/carolinacpmachado" target="_blank">linkedin</a>
+                </li>
+                <li>
+                    <a href="mailto:carolinacpmachado@gmail.com" target="_blank">email</a>
+                </li>
+            </ul>
+        </header>
+        <br>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Carolina Machado</h1>
+                    <h2>Web Developer Student</h2>
+                </div>
+                <br>
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fa-solid fa-chevron-down"></i>
+                </div>
+                <br>
+                <div style="display: none;" id="about">
+                    <div>
+                        <h3>About</h3>
+                        <br>
+                        <p>My name is Carolina, I am a 26 year old from Portugal.<br>I have a bachelor degree in Business and Management and I am currently working as a procurement technician for a spanish multinational company.</p>
+                    </div>
+                    <div>
+                        <h3>Coding Journey</h3>
+                        <br>
+                        <p>Recently I have discovered my passion for Web Development and decided to pursue my dream of becoming a Front-End web developer.<br>I was accepted on Hiring Coders #3 and also have been self learning code on multiple free online websites.<br>I have already learned so much about HTML and CSS in this small journey and have enjoyed every bit.<br>Next step will be learning Java Script. Wish me luck!</p>
+                    </div>
+                </div>
+
+                <br>
+                <div class="form">
+                    <p>Leave your email here:</p>
+                    <form action="">
+                        <input type="text" placeholder="email@email.com">
+                        <button>send</button>
+                    </form>
+                </div>
+            </section>
+            <footer>Carolina Machado 2022</footer>
+        </main>
+
+        <script>
+            function displayAbout() {
+                var arrow = document.getElementById('animation')
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about')
+                display.classList.toggle('active');
+            }
+        </script>
+    </div>
+</body>
+</html>
